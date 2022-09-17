@@ -1,21 +1,21 @@
 const contracts = [
   {
-    prod: 8159269,
+    prod: 22927201,
     network: 'bsc',
     name: 'Echoer',
-    address: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
+    address: '0x25005bab484d357d5117574f3e6Aafa4B47c1b2B',
   },
   {
     prod: 17754564,
     network: 'xdai',
     name: 'Echoer',
-    address: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
+    address: '0x25005bab484d357d5117574f3e6Aafa4B47c1b2B',
   },
   {
     prod: 16257996,
     network: 'matic',
     name: 'Echoer',
-    address: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
+    address: '0x25005bab484d357d5117574f3e6Aafa4B47c1b2B',
   },
   {
     prod: 11842486,
@@ -33,19 +33,19 @@ const contracts = [
     prod: 4429813,
     network: 'avalanche',
     name: 'Echoer',
-    address: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
+    address: '0x25005bab484d357d5117574f3e6Aafa4B47c1b2B',
   },
   {
     prod: 3430605,
     network: 'arbitrum-one',
     name: 'Echoer',
-    address: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
+    address: '0x25005bab484d357d5117574f3e6Aafa4B47c1b2B',
   },
   {
     prod: 2243694,
     network: 'optimism',
     name: 'Echoer',
-    address: '0xa75BF2815618872f155b7C4B0C81bF990f5245E4',
+    address: '0x25005bab484d357d5117574f3e6Aafa4B47c1b2B',
   },
 ];
 

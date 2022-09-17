@@ -16,7 +16,7 @@ const contracts = [
     network: 'bsc',
     currency: 'bnb',
     name: 'Instance',
-    address: '0x84443CFd09A48AF6eF360C6976C5392aC5023a1F',
+    address: '0x59F091AC3b210d04c8A03d0bdee81c4abCC34299',
   },
   {
     prod: deployedBlocks.bsc,
@@ -440,7 +440,7 @@ const contracts = [
     network: 'arbitrum-one',
     currency: 'eth',
     name: 'Instance',
-    address: '0x84443CFd09A48AF6eF360C6976C5392aC5023a1F',
+    address: '0x59F091AC3b210d04c8A03d0bdee81c4abCC34299',
   },
   {
     prod: deployedBlocks.arbitrum,
@@ -472,7 +472,7 @@ const contracts = [
     network: 'optimism',
     currency: 'eth',
     name: 'Instance',
-    address: '0x84443CFd09A48AF6eF360C6976C5392aC5023a1F',
+    address: '0x59F091AC3b210d04c8A03d0bdee81c4abCC34299',
   },
   {
     prod: deployedBlocks.optimism,

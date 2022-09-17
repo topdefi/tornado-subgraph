@@ -8,7 +8,7 @@
     name: Echoer
     network: xdai
     source:
-      address: "0xa75BF2815618872f155b7C4B0C81bF990f5245E4"
+      address: "0x25005bab484d357d5117574f3e6Aafa4B47c1b2B"
       abi: Echoer
       startBlock: 17754564
     mapping:
@@ -120,7 +120,7 @@
     name: Proxy
     network: xdai
     source:
-      address: "0x0D5550d52428E7e3175bfc9550207e4ad3859b17"
+      address: "0x908f155Df533AF20c4ED32af691B327eCc35e449"
       abi: Proxy
       startBlock: 17754561
     mapping:

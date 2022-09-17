@@ -1,21 +1,21 @@
 const contracts = [
   {
-    prod: 8158799,
+    prod: 22927490,
     name: 'Proxy',
     network: 'bsc',
-    address: '0x0D5550d52428E7e3175bfc9550207e4ad3859b17',
+    address: '0x908f155Df533AF20c4ED32af691B327eCc35e449',
   },
   {
     prod: 17754561,
     name: 'Proxy',
     network: 'xdai',
-    address: '0x0D5550d52428E7e3175bfc9550207e4ad3859b17',
+    address: '0x908f155Df533AF20c4ED32af691B327eCc35e449',
   },
   {
     prod: 16257989,
     name: 'Proxy',
     network: 'matic',
-    address: '0x0D5550d52428E7e3175bfc9550207e4ad3859b17',
+    address: '0x908f155Df533AF20c4ED32af691B327eCc35e449',
   },
   {
     prod: 14248730,
@@ -33,19 +33,19 @@ const contracts = [
     prod: 4429818,
     name: 'Proxy',
     network: 'avalanche',
-    address: '0x0D5550d52428E7e3175bfc9550207e4ad3859b17',
+    address: '0x908f155Df533AF20c4ED32af691B327eCc35e449',
   },
   {
     prod: 3430648,
     name: 'Proxy',
     network: 'arbitrum-one',
-    address: '0x0D5550d52428E7e3175bfc9550207e4ad3859b17',
+    address: '0x908f155Df533AF20c4ED32af691B327eCc35e449',
   },
   {
     prod: 2243689,
     name: 'Proxy',
     network: 'optimism',
-    address: '0x0D5550d52428E7e3175bfc9550207e4ad3859b17',
+    address: '0x908f155Df533AF20c4ED32af691B327eCc35e449',
   },
 ];
 
