@@ -2,7 +2,7 @@ module.exports = {
   yaml: [
     {
       specVersion: '0.0.2',
-      repository: 'https://github.com/tornadocash/tornado-subgraph',
+      repository: 'https://github.com/topdefi/tornado-subgraph',
       dataSourceKind: 'ethereum/contract',
       mapping: {
         kind: 'ethereum/events',

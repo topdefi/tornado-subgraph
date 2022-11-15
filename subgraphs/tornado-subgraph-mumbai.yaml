@@ -1,6 +1,6 @@
   specVersion: 0.0.2
   description: Proxy
-  repository: https://github.com/tornadocash/tornado-subgraph
+  repository: https://github.com/topdefi/tornado-subgraph
   schema:
     file: ../schema.graphql
   dataSources:
