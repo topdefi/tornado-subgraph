@@ -1,0 +1,69 @@
+  specVersion: 0.0.2
+  description: Proxy
+  repository: https://github.com/tornadocash/tornado-subgraph
+  schema:
+    file: ../schema.graphql
+  dataSources:
+  - kind: ethereum/contract
+    name: Echoer
+    network: bsc
+    source:
+      address: "0x4AFFFD0F9cD435A01115b3258D88c3777cAcB104"
+      abi: Echoer
+      startBlock: 28845148
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-echo-account.ts
+      entities:
+        - NoteAccount
+      abis:
+        - name: Echoer
+          file: ../abis/Echoer.json
+      eventHandlers:
+        - event: Echo(indexed address,bytes)
+          handler: handleEcho
+  - kind: ethereum/contract
+    name: Instance-0.1-matic
+    network: bsc
+    source:
+      address: "0x62Db1B81C5b0fc4F33DeB7D10C6f32F596bdBeD1"
+      abi: Instance
+      startBlock: 28845103
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Proxy
+    network: bsc
+    source:
+      address: "0x66c6B5b9d808f0a9254ed08E699bdffb5D76B311"
+      abi: Proxy
+      startBlock: 28845122
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-encrypted-note.ts
+      entities:
+        - EncryptedNote
+      abis:
+        - name: Proxy
+          file: ../abis/Proxy.json
+      eventHandlers:
+        - event: EncryptedNote(indexed address,bytes)
+          handler: handleEncryptedNote
