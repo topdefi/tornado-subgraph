@@ -1,0 +1,230 @@
+  specVersion: 0.0.2
+  description: Proxy
+  repository: https://github.com/tornadocash/tornado-subgraph
+  schema:
+    file: ../schema.graphql
+  dataSources:
+  - kind: ethereum/contract
+    name: Echoer
+    network: bsc
+    source:
+      address: "0xa75BF2815618872f155b7C4B0C81bF990f5245E4"
+      abi: Echoer
+      startBlock: 8159269
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-echo-account.ts
+      entities:
+        - NoteAccount
+      abis:
+        - name: Echoer
+          file: ../abis/Echoer.json
+      eventHandlers:
+        - event: Echo(indexed address,bytes)
+          handler: handleEcho
+  - kind: ethereum/contract
+    name: Instance-0.1-bnb
+    network: bsc
+    source:
+      address: "0x8641Ca7497dCe1f9D243f286Bb9Cb53948ee2652"
+      abi: Instance
+      startBlock: 22554087
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1-bnb
+    network: bsc
+    source:
+      address: "0xF4c2F30E930EC97B7bA8b7E7644697865612aFE5"
+      abi: Instance
+      startBlock: 22554111
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-10-bnb
+    network: bsc
+    source:
+      address: "0xE1d875A5743206EB635a91F19E235037C466bdC5"
+      abi: Instance
+      startBlock: 22554134
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100-bnb
+    network: bsc
+    source:
+      address: "0x3cF3E9D82c86b4A578dBDeA5a5AcF8eAD48d6DA5"
+      abi: Instance
+      startBlock: 22554152
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100-usdt
+    network: bsc
+    source:
+      address: "0x4Cd8aec4Fb72E1119F0C0f5A83685160fdaC4D58"
+      abi: Instance
+      startBlock: 22554592
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1000-usdt
+    network: bsc
+    source:
+      address: "0xD67b813D4f90e192223657A602a485888e089708"
+      abi: Instance
+      startBlock: 22554611
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-10000-usdt
+    network: bsc
+    source:
+      address: "0xEB8589883ef1B33B24aC6Da0a3985CE3eb4F8D6B"
+      abi: Instance
+      startBlock: 22554634
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100000-usdt
+    network: bsc
+    source:
+      address: "0xE3FaF068306b45eB7E5C293e0054238882a70C2b"
+      abi: Instance
+      startBlock: 22554651
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Proxy
+    network: bsc
+    source:
+      address: "0xbd89f03565025aAE6d6541c37A8B17EFf0E79887"
+      abi: Proxy
+      startBlock: 22554197
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      file: ../src/mapping-encrypted-note.ts
+      entities:
+        - EncryptedNote
+      abis:
+        - name: Proxy
+          file: ../abis/Proxy.json
+      eventHandlers:
+        - event: EncryptedNote(indexed address,bytes)
+          handler: handleEncryptedNote
